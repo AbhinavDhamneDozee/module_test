@@ -3,16 +3,11 @@ menu "Hello Module"
 config HELLO_MODULE
     bool "Enable Hello Module"
     default y
-    help
-      Enable the custom Hello Module
 
 config HELLO_MODULE_LOG_LEVEL
-    int "Hello Module log level"
+    int "Hello module log level"
     default 3
     range 0 4
     depends on HELLO_MODULE
-    help
-      Logging verbosity for Hello Module (0–4)
 
 endmenu
-
