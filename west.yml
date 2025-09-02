@@ -1,7 +1,3 @@
 manifest:
   self:
     path: module_test
-
-  projects:
-    - name: test1
-      path: modules/lib/test1
