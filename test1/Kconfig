@@ -1,0 +1,13 @@
+menu "Hello Module"
+
+config HELLO_MODULE
+    bool "Enable Hello Module"
+    default y
+
+config HELLO_MODULE_LOG_LEVEL
+    int "Hello module log level"
+    default 3
+    range 0 4
+    depends on HELLO_MODULE
+
+endmenu
